@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Just a webpage</title>
+        <style>
+            .fc-red{
+                color: red !important;
+            }
+            .bc-blue{
+                background-color: aqua;
+            }
+        </style>
+        <script>
+            function setText(text){
+                document.getElementById("out").innerHTML = text
+            }
+        </script>
+    </head>
+    <body style="display:flex;height:100vh; width:100vw; margin: 0;">
+        <div style="margin: auto;text-align: center;">
+            <h1 class="fc-red">This is a heading</h1>
+            <button type="button" onClick="setText('newText');">Click me</button>
+            <div class="bc-blue" id="out" style="height:1rem"></div>
+        </div>
+    </body>
+</html>
